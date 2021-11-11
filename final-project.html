@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <style>
+      body {
+        background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      }
+      .container {
+        margin: 50px 250px;
+        padding: 30px 50px;
+        background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 20px;
+        color: white;
+        font-family: sans-serif;
+        box-shadow: ;
+      }
+
+      .coded {
+        font-size: small;
+        text-align: center;
+      }
+
+      img {
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      h2 {
+        font-weight: lighter;
+      }
+
+      ul {
+        list-style: decimal;
+        line-height: 30px;
+        text-align: justify;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        transition: all 200ms ease-in-out;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      h4 {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 20px;
+        border-radius: 20px;
+        background-color: white;
+        color: #764ba2;
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        background-color: #764ba2;
+        color: white;
+      }
+
+      .apply {
+        text-decoration: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Easy Tricks You Can Teach Your Dog</h1>
+      <h2>Your best friend is going to look so smart at the dog park!</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/000/246/original/Captura_de_Tela_2020-02-02_a%CC%80s_19.49.55.png?1580673027"
+      />
+      <br />
+      <p>
+        These are some usefull tricks you can teach your dog in only one day of
+        practice. You only need your dog and some dog treats to
+        <strong>start having fun!</strong>
+      </p>
+      <br />
+      <hr />
+      <h3>Sit ☝🏼</h3>
+      <hr />
+      <ul>
+        <li>
+          Get your dog a treat. Let him smell it, then put it in your closed
+          wrist.
+        </li>
+        <li>
+          Place yourself in front of the dog while it is watching and waiting to
+          receive the treat.
+        </li>
+        <li>
+          Say, <em>[Name], sit down!</em> or <em>Sit!</em> Use the word you
+          prefer.
+        </li>
+        <li>
+          With the dog's attention focused on your hand, start following an
+          imaginary line to the dog's back, going over the head.
+        </li>
+      </ul>
+      <hr />
+      <h3>Stay ✋🏼</h3>
+      <hr />
+      <ul>
+        <li>
+          When the dog is sitting, try to be positioned close to him, on the
+          left or right side (choose one side). Put on the collar and say
+          <em>[Name], stay!</em> while placing your open hand next to him. Wait
+          a few seconds and, if he is quiet, say again <em>Very Well</em> or
+          <em>Good Boy</em>, in addition to rewarding him with a treat or
+          petting.
+        </li>
+        <li>
+          Repeat the previous process until you can be quiet for more than ten
+          seconds. Always continue to reward him at the beginning, then you can
+          alternate between a reward or a simple <em>Good Boy</em>.
+        </li>
+        <li>
+          When you get your dog to be quiet, say the command and try to get away
+          a little. If he goes after you, come back and repeat the command. Go
+          back a few meters, call the dog and offer a reward.
+        </li>
+        <li>
+          Increase the distance gradually until the dog is virtually still over
+          a distance of more than 10 meters, even if someone else calls him.
+          Don't forget to always call him at the end and say
+          <em>Come Here</em> or something like that so he knows when to move.
+        </li>
+      </ul>
+      <hr />
+      <h3>Shake Hands 👊🏼</h3>
+      <hr />
+      <ul>
+        <li>
+          The secret is that your dog will already naturally paw at you if they
+          want something. When you present a closed fistful of treats, your dog
+          will be compelled to paw at your hand since they can’t get the treats
+          with their mouth.
+        </li>
+        <li>
+          Once they continue to paw, begin to use the command <em>Shake</em> and
+          after repeating it several times, your dog is sure to learn a brand
+          new trick. Follow the instructions in the video above for more
+          details.
+        </li>
+      </ul>
+      <br />
+      <hr />
+      <p>I hope you and your pall enjoy these tricks!</p>
+      <h4>If you want to learn more tricks, apply to my next course!</h4>
+
+      <button>Apply now!</button>
+      <br />
+      <hr />
+      <p class="coded">
+        coded by
+        <a href="https://www.linkedin.com/in/nathaliaiscoding">
+          <strong>Nathalia</strong>
+        </a>
+        🤓
+      </p>
+    </div>
+    <script>
+      function questions() {
+        let name = prompt("What's your name?");
+        let age = prompt("How old are you?");
+        let heading = document.querySelector("h4");
+        if (age >= 18) {
+          heading.innerHTML =
+            "Yay, " + name + "! You and your dog can apply to my course! 😁";
+        } else {
+          heading.innerHTML =
+            "Oh, no, " +
+            name +
+            "! You and your dog cannot apply to my course until you become 18 years old. 😩";
+        }
+      }
+      let applyNow = document.querySelector("button");
+      applyNow.addEventListener("click", questions);
+    </script>
+  </body>
+</html>
